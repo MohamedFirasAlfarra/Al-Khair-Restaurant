@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.js"></script>
+    <title>قائمة الوجبات - المتجر الماسي</title>
+</head>
+<body>
+<div class="main-container full-width-container">
+    <header class="modern-header">
+        <div class="logo">
+            <h1>مطعم الخير</h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="AboutUs.html">عن المطعم</a></li>
+                <li><a href="Meals.html">الوجبات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section-title">
+            <h2>قائمة الوجبات المختارة بدقة</h2>
+        </div>
+
+        <div class="table-wrapper">
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>رقم الوجبة</th>
+                        <th>اسم الوجبة</th>
+                        <th>السعر (ل.س)</th>
+                        <th>التفاصيل</th>
+                        <th>اختيار وجبة واحدة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M101</td>
+                        <td>كبسة دجاج ملكية</td>
+                        <td>35000</td>
+                        <td><input type="checkbox" class="detail-check" data-target="detail1"></td>
+                        <td><input type="radio" name="mealSelect[]" value="كبسة دجاج ملكية - 35000" data-price="35000"></td>
+                    </tr>
+                    <tr id="detail1" class="hidden">
+                        <td colspan="5">
+                            <div class="details-container">
+                                <ul class="details-list">
+                                    <li><h3>المكونات:</h3> أرز بسمتي طويل الحبة، دجاج مشوي متبل، زبيب، لوز، خلطة بهارات كبسة ملكية</li>
+                                    <li><h3>التصنيف:</h3> مأكولات شرقية - خليجية</li>
+                                    <li><h3>الوصف:</h3> طبق كبسة فاخر غني بالبهارات العربية الأصيلة يُقدم مع الدقوس الحار وسلطة الزبادي.</li>
+                                </ul>
+                                <div class="details-images">
+                                    <img class="meal-image" src="photos/1.jpg" alt="كبسة دجاج">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>M102</td>
+                        <td>منسف لحم بلدي</td>
+                        <td>55000</td>
+                        <td><input type="checkbox" class="detail-check" data-target="detail2"></td>
+                        <td><input type="radio" name="mealSelect[]" value="منسف لحم بلدي - 55000" data-price="55000"></td>
+                    </tr>
+                    <tr id="detail2" class="hidden">
+                        <td colspan="5">
+                            <div class="details-container">
+                                <ul class="details-list">
+                                    <li><h3>المكونات:</h3> لحم غنم بلدي، جميد كركي أصلي، أرز بلدي، خبز شراك، صنوبر</li>
+                                    <li><h3>التصنيف:</h3> مأكولات شرقية - أردنية</li>
+                                    <li><h3>الوصف:</h3> المنسف التقليدي المحضر بالجميد واللحم البلدي الطازج، طبق الضيافة الأول.</li>
+                                </ul>
+                                <div class="details-images">
+                                    <img class="meal-image" src="photos/2.jpg" alt="منسف لحم">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M201</td>
+                        <td>ستيك لحم بصوص الفطر</td>
+                        <td>48000</td>
+                        <td><input type="checkbox" class="detail-check" data-target="detail3"></td>
+                        <td><input type="radio" name="mealSelect[]" value="ستيك لحم بصوص الفطر - 48000" data-price="48000"></td>
+                    </tr>
+                    <tr id="detail3" class="hidden">
+                        <td colspan="5">
+                            <div class="details-container">
+                                <ul class="details-list">
+                                    <li><h3>المكونات:</h3> قطعة ستيك تندرلوين، فطر طازج، كريمة طبخ، خضار سوتيه، بطاطا مهروسة</li>
+                                    <li><h3>التصنيف:</h3> مأكولات غربية - فرنسي</li>
+                                    <li><h3>الوصف:</h3> قطعة ستيك فاخرة مطهوة لدرجة الكمال مع صوص الفطر الكريمي الغني بالنكبة.</li>
+                                </ul>
+                                <div class="details-images">
+                                    <img class="meal-image" src="photos/3.jpg" alt="ستيك لحم">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M202</td>
+                        <td>باستا الفريدو بالدجاج</td>
+                        <td>28000</td>
+                        <td><input type="checkbox" class="detail-check" data-target="detail4"></td>
+                        <td><input type="radio" name="mealSelect[]" value="باستا الفريدو بالدجاج - 28000" data-price="28000"></td>
+                    </tr>
+                    <tr id="detail4" class="hidden">
+                        <td colspan="5">
+                            <div class="details-container">
+                                <ul class="details-list">
+                                    <li><h3>المكونات:</h3> باستا فوتوشيني، صدر دجاج مشوي، كريمة، جبن بارميزان، ثوم</li>
+                                    <li><h3>التصنيف:</h3> مأكولات غربية - إيطالي</li>
+                                    <li><h3>الوصف:</h3> باستا كلاسيكية بصوص الفريدو الكريمي مع قطع الدجاج الطرية والجبن الفاخر.</li>
+                                </ul>
+                                <div class="details-images">
+                                    <img class="meal-image" src="photos/4.jpg" alt="باستا الفريدو">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D301</td>
+                        <td>تشيز كيك الفراولة</td>
+                        <td>18000</td>
+                        <td><input type="checkbox" class="detail-check" data-target="detail5"></td>
+                        <td><input type="radio" name="mealSelect[]" value="تشيز كيك الفراولة - 18000" data-price="18000"></td>
+                    </tr>
+                    <tr id="detail5" class="hidden">
+                        <td colspan="5">
+                            <div class="details-container">
+                                <ul class="details-list">
+                                    <li><h3>المكونات:</h3> قاعدة بسكويت مقرمشة، كريمة الجبن الغنية، صوص فراولة طازج</li>
+                                    <li><h3>التصنيف:</h3> حلويات غربية</li>
+                                    <li><h3>الوصف:</h3> قطعة تشيز كيك باردة ومنعشة بصوص الفراولة الطبيعي، مثالية لتحلية بعد الغداء.</li>
+                                </ul>
+                                <div class="details-images">
+                                    <img class="meal-image" src="photos/5.jpg" alt="تشيز كيك">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D302</td>
+                        <td>كنافة نابلسية بالجبن</td>
+                        <td>22000</td>
+                        <td><input type="checkbox" class="detail-check" data-target="detail6"></td>
+                        <td><input type="radio" name="mealSelect[]" value="كنافة نابلسية بالجبن - 22000" data-price="22000"></td>
+                    </tr>
+                    <tr id="detail6" class="hidden">
+                        <td colspan="5">
+                            <div class="details-container">
+                                <ul class="details-list">
+                                    <li><h3>المكونات:</h3> عجينة كنافة ناعمة، جبن نابلسي، قطر، فستق حلبي</li>
+                                    <li><h3>التصنيف:</h3> حلويات شرقية</li>
+                                    <li><h3>الوصف:</h3> الكنافة النابلسية الساخنة بالجبن الذائب المغطاة بالفستق الحلبي والقطر.</li>
+                                </ul>
+                                <div class="details-images">
+                                    <img class="meal-image" src="photos/6.jpg" alt="كنافة نابلسية">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="continue-area">
+            <button id="continueButton" class="button">متابعة طلب الوجبة المختارة</button>
+        </div>
+
+        <div id="formContainer" class="hidden">
+            <div class="section-title">
+                <h2>بيانات مقدم الطلب</h2>
+            </div>
+            <form id="orderForm">
+                <div class="form-row">
+                    <label for="fullName">الاسم الكامل (بالإنجليزية، بالصيغة: Name Surname):</label>
+                    <input type="text" id="fullName" name="fullName" required pattern="^[A-Za-z]+ [A-Za-z]+$">
+                </div>
+                <div class="form-row">
+                    <label for="orderDate">تاريخ الطلب المفضل:</label>
+                    <input type="date" id="orderDate" name="orderDate" required>
+                </div>
+                <div class="form-row">
+                    <label for="mobile">رقم الموبايل السوري (093/094/095/096/098/099):</label>
+                    <input type="tel" id="mobile" name="mobile" required pattern="^(09[3-6|8-9]\d{7})$">
+                </div>
+                <div class="form-row">
+                    <label for="email">البريد الإلكتروني (اختياري):</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
+                    <label for="bankAccount">رقم الحساب البنكي (اختياري، 6 أرقام تبدأ بـ 0):</label>
+                    <input type="text" id="bankAccount" name="bankAccount" pattern="^0\d{5}$">
+                </div>
+                <div class="action-area">
+                    <button type="submit" class="button">تأكيد وإرسال الطلب</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+
+<script src="myFunctions.js"></script>
+</body>
+</html>
